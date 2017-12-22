@@ -1,6 +1,6 @@
 # ~*~ coding: utf-8 ~*~
 
-from .vector import Vector
+from vector import Vector
 
 def add(v1, v2):
     solution = []
