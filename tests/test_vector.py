@@ -3,8 +3,11 @@ from pasha.vector import Vector
 
 class TestVectorClass(unittest.TestCase):
 
+    def setUp(self):
+        self.v1 = Vector([1, 2, 3])
+
     def test_isvector(self):
-        self.assertTrue(isinstance(Vector([1, 2, 3]), Vector))
+        self.assertTrue(isinstance(self.v1), Vector))
 
     def test_non_integer(self):
         with self.assertRaises(ValueError):
@@ -19,7 +22,7 @@ class TestVectorClass(unittest.TestCase):
             Vector(1)
 
     def test_str(self):
-        self.assertTrue('Vector: (1, 2, 3)' == Vector([1, 2, 3]).__str__())
+        self.assertTrue('Vector: (1, 2, 3)' == self.v1).__str__())
 
     def test_eq(self):
-        self.assertTrue(Vector([1, 2, 3]).__eq__(Vector([1, 2, 3])))
+        self.assertTrue(self.v1.__eq__(Vector([1, 2, 3])))
