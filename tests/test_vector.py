@@ -7,7 +7,7 @@ class TestVectorClass(unittest.TestCase):
         self.v1 = Vector([1, 2, 3])
 
     def test_isvector(self):
-        self.assertTrue(isinstance(self.v1), Vector))
+        self.assertTrue(isinstance(self.v1, Vector))
 
     def test_non_integer(self):
         with self.assertRaises(ValueError):
