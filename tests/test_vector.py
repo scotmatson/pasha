@@ -16,7 +16,7 @@ class TestVectorClass(unittest.TestCase):
 
     def test_noniterable(self):
         with self.assertRaises(TypeError):
-            Vector(1, 2, 3)
+            Vector(1)
 
     def test_str(self):
         self.assertTrue('Vector: (1, 2, 3)' == Vector([1, 2, 3]).__str__())
