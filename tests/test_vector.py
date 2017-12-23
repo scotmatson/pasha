@@ -14,3 +14,6 @@ class TestVectorClass(unittest.TestCase):
 
     def test_str(self):
         self.assertTrue('Vector: (1, 2, 3)' == Vector([1, 2, 3]).__str__())
+
+    def test_eq(self):
+        self.assertTrue(Vector([1, 2, 3]).__eq__(Vector([1, 2, 3])))
