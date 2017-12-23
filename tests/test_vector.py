@@ -22,7 +22,7 @@ class TestVectorClass(unittest.TestCase):
             Vector(1)
 
     def test_str(self):
-        self.assertTrue('Vector: (1, 2, 3)' == self.v1).__str__())
+        self.assertTrue('Vector: (1, 2, 3)' == self.v1.__str__())
 
     def test_eq(self):
         self.assertTrue(self.v1.__eq__(Vector([1, 2, 3])))
